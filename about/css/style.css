@@ -347,14 +347,14 @@ figure{
   vertical-align: middle;
   padding: 13.5px 33px;
   cursor: pointer;
-  background: #ff3d3d;
+  background:#034edc;
   box-shadow: 0 10px 5px #f3d4d4;
-  border-radius: 25px;
+  border-radius: 999px;
   transition: all 500ms ease;
 }
 
 .btn-style-five:hover{
-  background: #f90606;
+  background: rgb(34, 6, 249);
   transform: translateY(-3px);
   box-shadow: 0 -5px 5px #f3d4d4;
 

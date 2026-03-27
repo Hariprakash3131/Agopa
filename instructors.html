@@ -28,6 +28,7 @@
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="assets/css/line-awesome.css">
 	<link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<!--- owl carousel Css-->
 	<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css?v=0.0.1">
 	<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
@@ -46,13 +47,243 @@
 	<!-- Style CSS -->
 	<link rel="stylesheet" href="assets/css/style.css?v=0.0.1">
 	<link rel="stylesheet" href="assets/css/custom.css">
-		<link rel="stylesheet" href="assets/css/new-ui.scss">
+	<link rel="stylesheet" href="assets/css/new-ui.scss">
 	<!-- Responsive CSS -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<style>
+	.footer.footer-skillarc {
+		background: #034edc;
+		color: #fff;
+		padding-top: 80px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.footer.footer-skillarc .container,
+	.footer.footer-skillarc .copyright {
+		position: relative;
+		z-index: 1;
+	}
+
+	.footer.footer-skillarc a {
+		color: #fff;
+		transition: 0.5s;
+	}
+
+	.footer.footer-skillarc a:hover,
+	.footer.footer-skillarc a:focus {
+		color: #dbe7ff;
+	}
+
+	.footer.footer-skillarc .footer-bottom {
+		border-top: 1px solid rgba(225, 225, 225, 0.08);
+		padding-top: 50px;
+		margin-top: 0;
+	}
+
+	.footer.footer-skillarc .footer-title {
+		font-size: 24px;
+		color: #fff;
+		margin-bottom: 40px;
+		position: relative;
+		font-weight: 600;
+	}
+
+	.footer.footer-skillarc .footer-title::after {
+		content: "";
+		background-image: url(assets/img/shapes/footer-title.svg);
+		position: absolute;
+		width: 50px;
+		height: 3px;
+		bottom: -21px;
+		left: 0;
+	}
+
+	.footer.footer-skillarc .about-footer .footer-logo {
+		margin-bottom: 20px;
+	}
+
+	.footer.footer-skillarc .footer-cont,
+	.footer.footer-skillarc .contact-info p span,
+	.footer.footer-skillarc .copyright p {
+		color: #f4f7ff;
+	}
+
+	.footer.footer-skillarc .single-footer li {
+		line-height: 35px;
+	}
+
+	.footer.footer-skillarc .footer-bottom ul {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+	}
+
+	.footer.footer-skillarc .contact-info p {
+		display: flex;
+		align-items: flex-start;
+		gap: 14px;
+		margin-bottom: 18px;
+	}
+
+	.footer.footer-skillarc .footer-contact-centered {
+		text-align: left;
+	}
+
+	.footer.footer-skillarc .footer-contact-centered .footer-title {
+		margin-bottom: 44px;
+	}
+
+	.footer.footer-skillarc .footer-contact-centered .footer-title::after {
+		left: 0;
+		transform: none;
+		width: 58px;
+	}
+
+	.footer.footer-skillarc .footer-contact-centered .contact-info {
+		margin-top: 8px;
+	}
+
+	.footer.footer-skillarc .footer-contact-centered .contact-info p {
+		display: grid;
+		grid-template-columns: 28px 1fr;
+		align-items: start;
+		column-gap: 16px;
+		margin-bottom: 24px;
+		overflow: visible;
+	}
+
+	.footer.footer-skillarc .footer-contact-centered .contact-info p span {
+		display: block;
+		float: none;
+		line-height: 1.7;
+		font-size: 18px;
+		color: #fff;
+	}
+
+	.footer.footer-skillarc .contact-info i {
+		font-size: 24px;
+		color: #f6f8fd;
+		line-height: 1.2;
+		margin-top: 3px;
+		min-width: 28px;
+		text-align: center;
+	}
+
+	.footer.footer-skillarc .fot-social {
+		margin-top: 28px;
+	}
+
+	.footer.footer-skillarc .fot-social span {
+		margin-bottom: 26px;
+		display: block;
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	.footer.footer-skillarc .fot-social li {
+		display: inline-block;
+		margin-right: 18px;
+	}
+
+	.footer.footer-skillarc .fot-social a {
+		width: 40px;
+		height: 40px;
+		line-height: 43px;
+		display: block;
+		background: #fff;
+		text-align: center;
+		font-size: 22px;
+		color: #034edc;
+		border-radius: 10px;
+		transform: rotate(50deg);
+		transition: 0.5s;
+	}
+
+	.footer.footer-skillarc .fot-social a i {
+		transform: rotate(-50deg);
+	}
+
+	.footer.footer-skillarc .fot-social a:hover,
+	.footer.footer-skillarc .fot-social a:focus {
+		background: #0d5ff9;
+		color: #fff;
+	}
+
+	.footer.footer-skillarc .copyright {
+		padding: 22px 30px;
+		background: rgba(13, 95, 249, 0.05);
+		margin-top: 70px;
+	}
+
+	.footer.footer-skillarc .circles {
+		position: absolute;
+		inset: 0;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+	}
+
+	.footer.footer-skillarc .circles li {
+		position: absolute;
+		display: block;
+		width: 20px;
+		height: 20px;
+		background: rgba(255, 255, 255, 0.18);
+		animation: skillarcFloat 25s linear infinite;
+		bottom: -150px;
+	}
+
+	.footer.footer-skillarc .circles li:nth-child(1) { left: 25%; width: 80px; height: 80px; animation-delay: 0s; }
+	.footer.footer-skillarc .circles li:nth-child(2) { left: 10%; animation-delay: 2s; animation-duration: 12s; }
+	.footer.footer-skillarc .circles li:nth-child(3) { left: 70%; animation-delay: 4s; }
+	.footer.footer-skillarc .circles li:nth-child(4) { left: 40%; width: 60px; height: 60px; animation-duration: 18s; }
+	.footer.footer-skillarc .circles li:nth-child(5) { left: 65%; }
+	.footer.footer-skillarc .circles li:nth-child(6) { left: 75%; width: 110px; height: 110px; animation-delay: 3s; }
+	.footer.footer-skillarc .circles li:nth-child(7) { left: 35%; width: 150px; height: 150px; animation-delay: 7s; }
+	.footer.footer-skillarc .circles li:nth-child(8) { left: 50%; width: 25px; height: 25px; animation-delay: 15s; animation-duration: 45s; }
+	.footer.footer-skillarc .circles li:nth-child(9) { left: 20%; width: 15px; height: 15px; animation-delay: 2s; animation-duration: 35s; }
+	.footer.footer-skillarc .circles li:nth-child(10) { left: 85%; width: 150px; height: 150px; animation-duration: 11s; }
+
+	@keyframes skillarcFloat {
+		0% {
+			transform: translateY(0) rotate(0deg);
+			opacity: 1;
+			border-radius: 0;
+		}
+
+		100% {
+			transform: translateY(-1000px) rotate(720deg);
+			opacity: 0;
+			border-radius: 50%;
+		}
+	}
+
+	@media (max-width: 991px) {
+		.footer.footer-skillarc .single-footer {
+			margin-bottom: 36px;
+		}
+
+		.footer.footer-skillarc .copyright {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+	@media (max-width: 575px) {
+		.footer.footer-skillarc {
+			padding-top: 60px;
+		}
+
+		.footer.footer-skillarc .footer-title {
+			font-size: 22px;
+		}
+	}
+</style>
     
 
 </head>
@@ -226,7 +457,7 @@
                 <h1>Creative strategic & digital branding experience</h1>
                 <ul class="page-breadcrumb">
                     <li><a href="index.html">home</a></li>
-                    <li>About V2</li>
+                    <li>About </li>
                 </ul>
             </div>
         </div>
@@ -362,7 +593,7 @@
                             <div class="counter-block-two" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
                                 <h4>Experince</h4>
                                 <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="1500" data-stop="20"></span><span>Y</span>
+                                    <span class="count-text" data-speed="1500" data-stop="3"></span><span>Y</span>
                                 </div>
                             </div>
                             <div class="counter-block-two" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000">
@@ -570,23 +801,21 @@
     </section>
     <!-- cta-section end -->
 
-
-    <!-- footer-subscribe -->
-    <section class="footer-subscribe about-page-2 style-four style-five">
-        <div class="style-image"><figure class="image"><img src="/about/images/icons/style-3.png" alt=""></figure></div>
-        <div class="image-box" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"><figure class="image flot-bob-y"><img src="/about/images/resource/footer-subscribe-2.png" alt=""></figure></div>
+	 <section class="footer-subscribe about-page-2 style-four style-five">
+        <div class="style-image"><figure class="image"><img src="images/icons/style-3.png" alt=""></figure></div>
+        <div class="image-box" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"><figure class="image flot-bob-y"><img src="images/resource/footer-subscribe-2.png" alt=""></figure></div>
         <div class="container clearfix">
             <div class="inner-container">
                 <div class="inner-box">
                     <div class="content-box">
                         <h2>Get Subscribed Now!</h2>
-                        <div class="text">The latest agopa news, articles, and resources, sent straight to your<br />inbox every month.</div>
+                        <div class="text">The latest Skillarc news, articles, and resources, sent straight to your<br />inbox every month.</div>
                     </div>
                     <div class="footer-subscribe-form">
                         <form action="#" method="post" class="subscribe-form">
                             <div class="form-group">
                                 <input type="email" name="email" placeholder="Type Your Email" required>
-                                <button type="submit " class="bg_btn bt">Subscribe Now</button>
+                                <button type="submit">Subscribe Now</button>
                             </div>
                         </form>
                     </div>
@@ -594,102 +823,103 @@
             </div>
         </div>               
     </section>
-    <!-- footer-sublcribe end -->
 
 
-    <!-- main-footer -->
-    <footer class="main-footer style-three style-four style-five style-six style-seven">
-        <div class="footer-top">
-            <div class="container clearfix">
-                <div class="left-content pull-left">
-                    <figure class="footer-logo">
-                        <a href="index.html"><img src="/about/images/logo-6.png" alt=""></a>
-                    </figure>
-                    <div class="language dropdownn"><a class="dropdown-toggle" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">Eng<span class="icon fa fa-caret-down"></span></a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
-                            <li><a href="#">Eng</a></li>
-                            <li><a href="#">Chi</a></li>
-                            <li><a href="#">Ger</a></li>
-                            <li><a href="#">Fre</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="right-content pull-right clearfix">
-                    <ul class="footer-social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="widget-content">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-12 footer-column">
-                        <div class="footer-widget contact-widget">
-                            <h3 class="widget-title">Contact us</h3>
-                            <ul class="contact-list">
-                                <li>
-                                    <i class="fa fa-map-marker-alt"></i>
-                                    21 Maypole Crescent Ilford, L6 California, United State.
-                                </li>
-                                <li>
-                                    <i class="fa fa-envelope"></i>
-                                    <a href="mailto:test@gmail.com">test@gmail.com</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-headphones"></i>
-                                    <a href="tel:+88016268101">+88016268101</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-12 offset-xl-2 footer-column">
-                        <div class="footer-widget link-widget">
-                            <h3 class="widget-title">Company</h3>
-                            <ul class="links-list">
-                                <li><a href="#">Request a Demo</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms of Service</a></li>
-                                <li><a href="#">Partners</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-12 offset-xl-2 footer-column">
-                        <div class="footer-widget link-widget">
-                            <h3 class="widget-title">Navigation</h3>
-                            <ul class="links-list">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Plans & Pricing</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container clearfix">
-                <div class="left-content">
-                    <ul class="apps-btn">
-                        <li><a href="#"><i class="fab fa-apple"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-play"></i></a></li>
-                        <li><a href="#"><i class="fab fa-windows"></i></a></li>
-                    </ul>
-                </div>
-                <div class="right-content">
-                    <div class="clearfix">
-                        <div class="conditions"><a href="#">Terms & Conditions</a></div>
-                        <div class="copyright">Copyrights 2019 <a href="#">Agopa</a> Template</div>
-                    </div>
-                </div>
-            </div>                
-        </div>
-    </footer>
-   <!-- main-footer end -->
+	<section class="footer footer-skillarc">
+		<div class="container">
+			<div class="row footer-bottom">
+				<div class="col-xl-5 col-md-6 col-12 wow fadeIn">
+					<div class="single-footer">
+						<div class="about-footer">
+							<div class="footer-logo">
+								<a href="./index.html"><img src="assets/img/our-images/logo white.svg" alt="Skillarc"></a>
+							</div>
+							<p class="footer-cont">
+								We provide career-focused IT jobs, international job opportunities, and online learning programs designed to build in-demand skills. We help individuals upskill, gain global exposure, and move forward with confidence in today's competitive job market.
+							</p>
+
+							<div class="fot-social">
+								<span>Follow Us On :</span>
+								<ul>
+									<li>
+										<a href="https://www.instagram.com/skill_arc25/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-instagram"></i></a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/mani-kandan-704220138/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xl-2 col-md-6 col-12 wow fadeIn" data-wow-delay=".1s">
+					<div class="single-footer">
+						<h3 class="footer-title">Useful Links</h3>
+						<ul>
+							<li><a href="./index.html">Home</a></li>
+							<li><a href="./instructors.html">About Us</a></li>
+							<li><a href="#">Courses</a></li>
+							<li><a href="#">Categories</a></li>
+							<li><a href="#">Pricing</a></li>
+							<li><a href="./contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-xl-2 col-md-6 col-12 wow fadeIn" data-wow-delay=".2s">
+					<div class="single-footer">
+						<h3 class="footer-title">Resources</h3>
+						<ul>
+							<li><a href="#">Community</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Video Guides</a></li>
+							<li><a href="#">Terms and Conditions</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Security</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-xl-3 col-md-6 col-12 wow fadeIn" data-wow-delay=".3s">
+					<div class="single-footer footer-contact-centered">
+						<h3 class="footer-title">Contact Us</h3>
+						<div class="contact-info">
+							<p>
+								<i class='bx bx-map'></i>
+								<span>16/18, N.G.O Colony, Guduvancheri,<br>Chennai - 603202</span>
+							</p>
+							<p>
+								<i class='bx bx-phone'></i>
+								<span>+91 9363537240</span>
+							</p>
+							<p>
+								<i class='bx bx-envelope'></i>
+								<span>info@skillarc.net</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright text-center wow fadeIn" data-wow-delay=".4s">
+			<p>Copyright &copy; 2026 <a href="./index.html">Skillarc</a>. All rights reserved.</p>
+		</div>
+
+		<ul class="circles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</section>
 
 
 

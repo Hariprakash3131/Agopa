@@ -2197,6 +2197,15 @@ svg#play_icon:hover #triangle {
 	color: #fff;
 	transition: .5s;
 }
+.footer p,
+.footer span,
+.footer li,
+.footer .contact-info i,
+.footer .contact-info p span,
+.footer .copyright p,
+.footer .footer-cont{
+	color: #fff;
+}
 .footer a:hover,
 .footer a:focus{
 	color: #0D5FF9;
@@ -2278,12 +2287,12 @@ svg#play_icon:hover #triangle {
 .contact-info p{
 	overflow: hidden;
 }
-.contact-info i{
+.footer .contact-info i{
 	float: left;
 	padding-right: 15px;
-	padding-top: 6px;
+	/* padding-top: 6px; */
 	font-size: 24px;
-	color: #f6f8fd;
+	color: #fff;
 }
 
 .contact-info p span{
