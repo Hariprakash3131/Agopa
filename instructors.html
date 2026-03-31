@@ -283,6 +283,79 @@
 			font-size: 22px;
 		}
 	}
+
+	.page-title {
+		overflow: hidden;
+	}
+
+	.page-title .image-box {
+		position: absolute;
+		inset: 0;
+		display: block !important;
+		min-height: 0;
+		pointer-events: none;
+	}
+
+	.page-title .content-box {
+		z-index: 3;
+	}
+
+	.page-title .image-1,
+	.page-title .image-2,
+	.page-title .image-3,
+	.page-title .image-4 {
+		position: absolute;
+		z-index: 1;
+	}
+
+	.page-title .image-4 {
+		right: 90px;
+		top: 120px;
+		z-index: 3;
+	}
+
+	.page-title .image-4 img {
+		display: block;
+		width: 320px;
+		max-width: 22vw;
+		min-width: 220px;
+		height: auto;
+	}
+
+	@media (max-width: 1199px) {
+		.page-title .image-4 {
+			right: 40px;
+			top: 140px;
+		}
+
+		.page-title .image-4 img {
+			min-width: 180px;
+			max-width: 24vw;
+		}
+	}
+
+	@media (max-width: 991px) {
+		.page-title .image-4 {
+			right: 24px;
+			top: 150px;
+		}
+
+		.page-title .image-4 img {
+			width: 190px;
+			max-width: 190px;
+			min-width: 0;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.page-title .image-box {
+			display: none !important;
+		}
+
+		.page-title .image-4 {
+			display: none;
+		}
+	}
 </style>
     
 
@@ -451,6 +524,7 @@
             <figure class="image-1"><img src="/about/images/resource/page-title-1.png" alt=""></figure>
             <figure class="image-2 flot-bob-y"><img src="/about/images/resource/page-title-2.png" alt=""></figure>
             <figure class="image-3 flot-bob-y"><img src="/about/images/resource/page-title-3.png" alt=""></figure>
+            <figure class="image-4 flot-bob-y"><img src="/Our/images/resource/banner-img-10.png" alt=""></figure>
         </div>
         <div class="container">
             <div class="content-box">
@@ -754,14 +828,6 @@
         </div>
     </section> -->
     <!-- testimonial-section end -->
-
-
-    <div class="style-bg about-page-2">
-        <div class="image-box">
-            <figure class="image-1"><img src="/about/images/icons/style-1.png" alt=""></figure>
-        </div>
-    </div>
-
 
     <!-- cta-section -->
     <section class="cta-section style-four about-page-2">

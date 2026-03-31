@@ -6933,15 +6933,18 @@ figure{
   margin: 0 auto;
 }
 
-.page-title .content-box h1{
-  position: relative;
-  display: block;
-  font-size: 46px;
-  font-weight: 600;
-  line-height: 50px;
-  color: #2f2f2f;
-  margin-bottom: 32px;
+.page-title .content-box h1 {
+    position: relative;
+    display: block;
+    font-size: 46px;
+    width: 500px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #2f2f2f;
+    margin-bottom: 85px;
+    left: 160px;
 }
+
 
 .page-title .content-box .page-breadcrumb li{
   position: relative;
@@ -6970,7 +6973,7 @@ figure{
 
 .page-title .content-box .page-breadcrumb li:last-child{
   padding: 0px;
-  margin: 0px;
+
 }
 
 .page-title .content-box .page-breadcrumb li a{
