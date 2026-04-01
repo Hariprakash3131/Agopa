@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<title>Agopa - HTML 5 Template Preview</title>
+<title>Skillarc </title>
 
 <!-- Stylesheets -->
 <link href="/about/css/style.css" rel="stylesheet">
@@ -77,101 +77,170 @@
         margin-bottom: 10px;
     }
 
-    .page-title.contact-page-3 {
-        overflow: hidden;
-    }
-
-    .page-title.contact-page-3 .image-box {
-        position: absolute;
-        inset: 0;
-        display: block !important;
-        pointer-events: none;
-    }
-
-    .page-title.contact-page-3 .content-box {
+    .contact-hero {
         position: relative;
-        z-index: 2;
+        overflow: hidden;
+        padding: 150px 0 90px;
+        background:
+            radial-gradient(circle at left top, rgba(215, 87, 251, 0.08), transparent 34%),
+            radial-gradient(circle at right bottom, rgba(13, 95, 249, 0.08), transparent 30%),
+            #fff;
     }
 
-    .page-title.contact-page-3 .image-1 {
-        left: 20px;
-        top: 300px;
-        bottom: auto;
-        z-index: 1;
+    .contact-hero__inner {
+        display: grid;
+        grid-template-columns: minmax(220px, 300px) minmax(320px, 1fr) minmax(300px, 430px);
+        align-items: center;
+        gap: 28px;
+        min-height: 420px;
     }
 
-    .page-title.contact-page-3 .image-2 {
-        position: absolute;
-        right: 70px;
-        top: 200px;
-        left: auto;
-        bottom: auto;
-        z-index: 3;
+    .contact-hero__visual {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .page-title.contact-page-3 .image-2 img {
+    .contact-hero__visual--left {
+        justify-content: flex-start;
+        align-self: end;
+    }
+
+    .contact-hero__visual--right {
+        justify-content: flex-end;
+    }
+
+    .contact-hero__visual img {
         display: block;
-        width: 360px;
-        max-width: 24vw;
-        min-width: 240px;
+        width: 100%;
         height: auto;
     }
 
-    .page-title.contact-page-3 .image-3 {
-        display: none;
+    .contact-hero__visual--left img {
+        max-width: 210px;
     }
 
-    .page-title.contact-page-3 .image-4 {
-        position: absolute;
-        right: 70px;
-        top: 105px;
-        z-index: 3;
+    .contact-hero__visual--right img {
+        max-width: 380px;
     }
 
-    .page-title.contact-page-3 .image-4 img {
-        display: block;
-        width: 360px;
-        max-width: 24vw;
-        min-width: 240px;
-        height: auto;
+    .contact-hero__content {
+        text-align: center;
+        max-width: 520px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact-hero__title {
+        margin: 0 0 16px;
+        font-size: clamp(42px, 4.6vw, 72px);
+        line-height: 1.05;
+        font-weight: 700;
+        color: #222;
+        text-wrap: balance;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-hero__breadcrumb {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .contact-hero__breadcrumb li,
+    .contact-hero__breadcrumb a {
+        font-size: clamp(15px, 1.4vw, 18px);
+        line-height: 1.5;
+        color: #666;
+    }
+
+    .contact-hero__breadcrumb li {
+        position: relative;
+    }
+
+    .contact-hero__breadcrumb li + li::before {
+        content: "-";
+        margin-right: 10px;
+        color: #999;
+    }
+
+    .contact-hero__breadcrumb a:hover {
+        color: #0d5ff9;
     }
 
     @media (max-width: 1199px) {
-        .page-title.contact-page-3 .image-1 {
-            top: 110px;
+        .contact-hero {
+            padding: 140px 0 80px;
         }
 
-        .page-title.contact-page-3 .image-2 {
-            right: 32px;
-            top: 110px;
+        .contact-hero__inner {
+            grid-template-columns: minmax(160px, 210px) minmax(280px, 1fr) minmax(230px, 320px);
+            min-height: 360px;
+            gap: 20px;
         }
 
-        .page-title.contact-page-3 .image-2 img {
-            min-width: 180px;
-            max-width: 24vw;
+        .contact-hero__visual--left img {
+            max-width: 170px;
+        }
+
+        .contact-hero__visual--right img {
+            max-width: 300px;
         }
     }
 
     @media (max-width: 991px) {
-        .page-title.contact-page-3 .image-1 {
-            top: 125px;
+        .contact-hero {
+            padding: 128px 0 68px;
         }
 
-        .page-title.contact-page-3 .image-2 {
-            right: 24px;
-            top: 125px;
+        .contact-hero__inner {
+            grid-template-columns: 1fr;
+            min-height: auto;
+            gap: 18px;
         }
 
-        .page-title.contact-page-3 .image-2 img {
-            width: 190px;
-            max-width: 190px;
-            min-width: 0;
+        .contact-hero__visual {
+            display: none;
+        }
+
+        .contact-hero__content {
+            max-width: 100%;
         }
     }
 
     @media (max-width: 767px) {
-        .page-title.contact-page-3 .image-box {
-            display: none !important;
+        .contact-hero {
+            padding: 116px 0 52px;
+        }
+
+        .contact-hero__title {
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .contact-hero {
+            padding: 108px 0 40px;
+        }
+
+        .contact-hero .container {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
+        .contact-hero__title {
+            font-size: 32px;
+            line-height: 1.12;
+        }
+
+        .contact-hero__breadcrumb li,
+        .contact-hero__breadcrumb a {
+            font-size: 14px;
         }
     }
 </style>
@@ -218,14 +287,14 @@
 								<a href="./contact.html">Contact</a>
 							</li>
 							<li>
-								<a href="./instructors.html">Team Members</a>
+								<a href="./teammembers.html">Team Members</a>
 							</li>
 							<!-- <li class="menu-item-has-children">
 								<a href="#">Pages</a>
 								<ul class="sub-menu">
 									<li><a href="login.html">Login</a></li>
 									<li><a href="register.html">Register</a></li>
-									<li><a href="instructors.html">Team Members</a></li>
+									<li><a href="teammembers.html">Team Members</a></li>
 									<li><a href="404.html">404</a></li>
 								</ul>
 							</li> -->
@@ -263,10 +332,10 @@
 						<a href="./index.html">Home</a>
 					</li>
 					<li>
-						<a href="">Our Services</a>
+						<a href="/Our/ourservices.html">Our Services</a>
 					</li>
 					<li>
-						<a href="">Our Projects</a>
+						<a href="/project.html">Our Projects</a>
 					</li>
 					<li>
 						<a href="./instructors.html">About Us</a>
@@ -275,7 +344,7 @@
 						<a href="./contact.html">Contact</a>
 					</li>
 					<li>
-						<a href="./instructors.html">Team Members</a>
+						<a href="./teammembers.html">Team Members</a>
 					</li>
 				</ul>
 			</div>
@@ -336,20 +405,22 @@
 
 
     <!-- page-title -->
-    <section class="page-title contact-page contact-page-3 centred">
-        <div class="image-box">
-            <figure class="image-1"><img src="/about/images/resource/page-title-1.png" alt=""></figure>
-            <figure class="image-2 flot-bob-y"><img src="/about/images/resource/page-title-2.png" alt=""></figure>
-            <!-- <figure class="image-3 flot-bob-y"><img src="/about/images/resource/page-title-3.png" alt=""></figure> -->
-            <!-- <figure class="image-4 flot-bob-y"><img src="/Our/images/resource/banner-img-10.png" alt=""></figure> -->
-        </div>
+    <section class="contact-hero">
         <div class="container">
-            <div class="content-box">
-                <h1>Contact us</h1>
-                <ul class="page-breadcrumb">
-                    <li><a href="index.html">home</a></li>
-                    <li>Contact</li>
-                </ul>
+            <div class="contact-hero__inner">
+                <figure class="contact-hero__visual contact-hero__visual--left">
+                    <img src="/about/images/resource/page-title-1.png" alt="Decorative plant illustration">
+                </figure>
+                <div class="contact-hero__content">
+                    <h1 class="contact-hero__title">Contact us</h1>
+                    <ul class="contact-hero__breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <figure class="contact-hero__visual contact-hero__visual--right">
+                    <img src="/about/images/resource/page-title-2.png" alt="Decorative teamwork illustration">
+                </figure>
             </div>
         </div>
     </section>
@@ -604,3 +675,4 @@
 
 </body><!-- End of .page_wrapper -->
 </html>
+
