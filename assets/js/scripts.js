@@ -21,16 +21,20 @@ Version      : 1.0
 		jQuery(document).ready(function($) {
 
 			/*Counter */
-			$('.counter-item .cnumb').counterUp({
+			if ($.fn.counterUp) {
+				$('.counter-item .cnumb').counterUp({
 				delay: 10,
 				time: 1000
-			});
+				});
+			}
 			
 			/* Active Menu */
-			$(".mobile_menu").simpleMobileMenu({			
+			if ($.fn.simpleMobileMenu) {
+				$('.mobile_menu').simpleMobileMenu({			
 				"menuStyle": "slide"
-			});
-			
+				});
+			}
+
 		});
 		
 		
