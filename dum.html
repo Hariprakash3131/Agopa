@@ -62,7 +62,7 @@
 
 
     <!-- main header -->
-<header id="navigation" class="fixed-top border">
+  <header id="navigation" class="fixed-top border">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-30 left-col align-self-center">
@@ -76,11 +76,25 @@
 				<div class="col-40 justify-content-center  flex d-flex align-self-center mr-[30px]">
 					<nav id="main-menu">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="ourservices.html">Our Services</a></li>
-							<li><a href="project.html">Our Projects</a></li>
-							<li><a href="instructors.html">About Us</a></li>
-							<li class="menu-item-has-children">
+							<li>
+								<a href="./index.html">Home</a>
+							</li>
+							<li>
+								<a href="/Our/ourservices.html">Our Services</a>
+							</li>
+							<li>
+								<a href="./project.html">Our Projects</a>
+							</li>
+							<li>
+								<a href="./instructors.html">About Us</a>
+							</li>
+							<li>
+								<a href="./contact.html">Contact</a>
+							</li>
+							<li>
+								<a href="./teammembers.html">Team Members</a>
+							</li>
+							<!-- <li class="menu-item-has-children">
 								<a href="#">Pages</a>
 								<ul class="sub-menu">
 									<li><a href="login.html">Login</a></li>
@@ -88,8 +102,8 @@
 									<li><a href="teammembers.html">Team Members</a></li>
 									<li><a href="404.html">404</a></li>
 								</ul>
-							</li>
-							<li><a href="contact.html">Contact</a></li>
+							</li> -->
+							<li>
 						</ul>
 					</nav>
 				</div><!-- End Col -->
@@ -117,25 +131,31 @@
 					<!-- <a href="#" class="bt login-btn">Login / Register</a> -->
 				</div>
 
-				<ul class="mobile_menu">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="ourservices.html">Our Services</a></li>
-					<li><a href="project.html">Our Projects</a></li>
-					<li><a href="instructors.html">About Us</a></li>
+				<ul class='mobile_menu'>
+
 					<li>
-						<a href="#">Pages</a>
-						<ul>
-							<li><a href="login.html">Login</a></li>
-							<li><a href="register.html">Register</a></li>
-							<li><a href="teammembers.html">Team Members</a></li>
-							<li><a href="404.html">404</a></li>
-						</ul>
+						<a href="./index.html">Home</a>
 					</li>
-					<li><a href="contact.html">Contact</a></li>
+					<li>
+						<a href="">Our Services</a>
+					</li>
+					<li>
+						<a href="">Our Projects</a>
+					</li>
+					<li>
+						<a href="./instructors.html">About Us</a>
+					</li>
+					<li>
+						<a href="./contact.html">Contact</a>
+					</li>
+					<li>
+						<a href="./teammembers.html">Team Members</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</header>
+
 
     <!--Form Back Drop-->
     <div class="form-back-drop"></div>
@@ -767,64 +787,6 @@ interactions.
 
 <!-- main-js -->
 <script src="/about/js/script.js"></script>
-
-
-
-
-<!-- Latest jQuery -->
-	<script src="assets/js/jquery.min.js"></script>
-	<!-- Latest compiled and minified Bootstrap -->
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<!-- jquery-simple-mobilemenu.min -->
-	<script src="assets/js/jquery-simple-mobilemenu.js"></script>
-	<!-- imagesloaded.pkgd -->
-	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-	<!-- masonry -->
-	<script src="assets/js/masonry.pkgd.min.js"></script>
-	<!-- modernizer JS -->
-	<script src="assets/js/modernizr-2.8.3.min.js"></script>
-	<!-- owl-carousel min js  -->
-	<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
-	<script>
-		jQuery(document).ready(function($){
-			$('.home-banner-slider').owlCarousel({
-				items:1,
-				loop:true,
-				nav:true,
-				dots:true,
-				autoplay:true,
-				autoplayTimeout:3000,
-				autoplayHoverPause:true,
-				navText:['<span class="owl-prev"></span>','<span class="owl-next"></span>']
-			});
-				
-				// open course details modal
-				$('.view-details-btn').on('click', function(e){
-					e.preventDefault();
-					$('#courseDetailsModal').modal('show');
-				});
-		});
-	</script>
-	<!-- waypoints -->
-	<script src="assets/js/waypoints.min.js"></script>
-	<!-- counterup -->
-	<script src="assets/js/jquery.counterup.min.js"></script>
-	<!-- jquery appear js -->
-	<script src="assets/js/jquery.appear.js"></script>
-	<!-- magnific-popup js -->
-	<script src="assets/js/jquery.magnific-popup.js"></script>
-	<!-- YouTubePopUp js -->
-	<script src="assets/js/YouTubePopUp.jquery.js"></script>
-	<!-- yvpopup-active js -->
-	<script src="assets/js/yvpopup-active.js"></script>
-	<!-- scrolltopcontrol js -->
-	<script src="assets/js/scrolltopcontrol.js"></script>
-	<!-- Wow js -->
-	<script src="assets/js/wow.js"></script>
-	<!-- slick js -->
-	<script src="assets/js/slick.js"></script>
-	<!-- scripts js -->
-	<script src="assets/js/scripts.js"></script>
 
 </body><!-- End of .page_wrapper -->
 </html>
